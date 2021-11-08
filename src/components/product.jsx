@@ -83,23 +83,26 @@ const Button = styled.button`
 
 const Prices = styled.div`
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 `
 
-const SaleText = styled.span`
+const SaleText = styled.div`
   color: var(--color-sale);
 `
 
-const PriceStroke = styled.span`
+const PriceStroke = styled.div`
   text-decoration: line-through;
   font-size: 0.9em;
 `
 
-const PriceSale = styled.span`
+const PriceSale = styled.div`
   color: var(--color-sale);
   font-size: 1.1em;
 `
 
-const Price = styled.span`
+const Price = styled.div`
   font-size: 1.1em;
 `
 

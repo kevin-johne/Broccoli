@@ -17,10 +17,10 @@ const Wrapper = styled.div`
 
 
 const Products = () => {
-  const { data , loading, error } = useQuery(ProductQuery, { variables: { query: "Lamb Roasting Joints", first: 10 }});
+  const { data, loading, error } = useQuery(ProductQuery, { variables: { query: "Beef", first: 10 } });
 
   let products = [];
-  if(data) {
+  if (data) {
     products = data.productSearch.nodes;
   }
 
