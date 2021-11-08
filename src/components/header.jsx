@@ -5,7 +5,9 @@ import logoImg from "../logo.svg";
 import Basket from "./basket";
 
 const Wrapper = styled.div`
-
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: var(--color-brand);
 `
 
