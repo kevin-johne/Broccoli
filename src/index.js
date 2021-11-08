@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App.jsx';
 import reportWebVitals from './reportWebVitals';
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import { BasketProvider } from "./state/basket";
+
+const client = new ApolloClient({
+  uri: "https://staging-graphql-gateway.farmdrop.com/graphql",
+  cache: new InMemoryCache()
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+      <BasketProvider>
+        <App />
+      </BasketProvider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,10 +1,35 @@
+@font-face {
+  font-family: "HKConentrate";
+  src: url("assets/fonts/HKConcentrate-Regular.woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HKConentrate";
+  src: url("assets/fonts/HKConcentrate-Medium.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "HKConentrate";
+  src: url("assets/fonts/HKConcentrate-Bold.woff2");
+  font-weight: 600;
+}
+
+
+:root {
+  --color-brand: #00B495;
+  --color-text: #333333;
+  --color-sale: #B60E40;
+  --max-page-width: 2000px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "HKConentrate", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text)
 }
 
 code {
